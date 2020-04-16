@@ -1,0 +1,12 @@
+package jp.co.intra_mart.system.logic.data.converter;
+
+import jp.co.intra_mart.foundation.logic.annotation.DataConverter;
+
+@DataConverter
+public class ShortConverter extends NumberConverter<Short> {
+
+    @Override
+    protected Class<Short> getType() {
+        return Short.class;
+    }
+}
